@@ -1,18 +1,13 @@
-// script.js
-
-// Toggle between light and dark mode
 function toggleDarkMode() {
   document.body.classList.toggle('dark-mode');
   localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
 }
 
-// Load dark mode preference
 window.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('darkMode') === 'true') {
     document.body.classList.add('dark-mode');
   }
 
-  // Load saved tasks
   const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
   const taskList = document.getElementById('task-list');
 
@@ -27,7 +22,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Save a new task
 function addTask(text) {
   const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
   const newTask = {
@@ -40,7 +34,6 @@ function addTask(text) {
   location.reload();
 }
 
-// Mark a task as complete and hide it
 function completeTask(taskId) {
   const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
   const updatedTasks = tasks.map(task => {
