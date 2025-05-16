@@ -1,4 +1,3 @@
-<!-- today.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,6 @@
   <title>Today's Tasks</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Existing styles - adjust as needed */
     body {
       font-family: Arial, sans-serif;
       background-color: #fff;
@@ -51,7 +49,6 @@
       margin-bottom: 2rem;
     }
 
-    /* New styles for form */
     #todayForm {
       display: flex;
       gap: 1rem;
@@ -170,7 +167,6 @@
 
     const STORAGE_KEY = 'todayTasks';
 
-    // Load tasks from localStorage
     function loadTasks() {
       const data = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
       todayTasks.innerHTML = '';
@@ -186,7 +182,6 @@
           </div>
         `;
 
-        // Drag and drop handlers for reordering
         li.addEventListener('dragstart', e => {
           e.dataTransfer.setData('text/plain', i);
           e.currentTarget.style.opacity = '0.5';
