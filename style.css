@@ -5,8 +5,8 @@
   --text-dark: #eee;
   --accent: #f28db2;
   --hover: #ffb3c6;
-  --ribbon: url('https://i.imgur.com/6cp1QJq.png');
-  --cherry: url('https://i.imgur.com/54e3R5O.png');
+  --ribbon: url('https://i.imgur.com/6cp1QJq.png'); 
+  --cherry: url('https://i.imgur.com/54e3R5O.png'); 
 }
 
 body {
@@ -35,7 +35,7 @@ body.dark-mode {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  background-image: url("https://pin.it/1e0QkUO4Y");
+  background-image: url("bow.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
