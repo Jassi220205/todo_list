@@ -1,4 +1,3 @@
-<!-- water.html -->
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -18,7 +17,6 @@
       overflow-x: auto;
       padding: 0.5rem 0;
     }
-    /* container for each day label + input vertically stacked */
     .day-input {
       display: flex;
       flex-direction: column;
@@ -64,7 +62,7 @@
       max-width: 600px;
       margin: 2rem auto;
     }
-    /* Scrollbar styling for horizontal form overflow */
+
     form::-webkit-scrollbar {
       height: 8px;
     }
@@ -194,7 +192,6 @@
       renderChart(data);
     });
 
-    // Initial load
     const initialData = loadData();
     renderChart(initialData);
   </script>
